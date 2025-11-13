@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Control</title>
+    <link rel="stylesheet" href="css/city-style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>City Control System</h2>
+        </div>
+        <div class="menu-toggle" id="menu-toggle" >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div><!--toggle menu-->
+        <nav class="nav-links">
+         <ul class="navigation">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Control">Control</a></li>
+            <li><a href="#Reports">Reports</a></li>
+            <li><a href="#Setting">Settings</a></li>
+         </ul>
+        </nav>
+    </header>
+
+    <section class="home" id="Home">
+        <div class="home-text">
+            <h2>Weclome To Smart City Monitoring Dashboard</h2>
+            <p>Manage and monitor lights, traffic, CCTV, and water systems efficiently.</p>
+        </div><!--home text-->
+    </section>
+
+    <section class="home1">
+        <div class="home1-grid">
+            <div class="home1-card">
+                <div class="home1-info">
+                    <h2>Street Light Control</h2>
+                    <table>
+                        <tr>
+                            <th>Area</th>
+                            <th>Status</th>
+                            <th>Last Update</th>
+                        </tr>
+                        <tr>
+                            <td>Main Road</td>
+                            <td class="title">ON</td>
+                            <td>10:30pm</td>
+                        </tr>
+                         <tr>
+                            <td>Market Zone</td>
+                            <td class="title1">OFF</td>
+                            <td>11:00pm</td>
+                        </tr>
+                    </table>
+                </div><!--home info-->
+            </div><!--home card-->
+
+              <div class="home1-card">
+                <div class="home1-info">
+                    <h2>CCTV Monitoring</h2>
+                    <table>
+                        <tr>
+                            <th>Location</th>
+                            <th>Camera</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>City Gate</td>
+                            <td>#CCTV-01</td>
+                            <td class="title">Active</td>
+                        
+                        </tr>
+                         <tr>
+                            <td>Bus Stand</td>
+                            <td>#CCTV-05</td>
+                            <td class="title1">Offline</td>
+                           
+                        </tr>
+                    </table>
+                </div><!--home info-->
+            </div><!--home card-->
+
+            <div class="home1-card">
+                <div class="home1-info">
+                    <h2>Water Supply System</h2>
+                    <table>
+                        <tr>
+                            <th>Zone</th>
+                            <th>Pressure</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>East Side</td>
+                            <td>75 PSI</td>
+                            <td class="title">Normal</td>
+                        
+                        </tr>
+                         <tr>
+                            <td>North Zone</td>
+                            <td>75 PSI</td>
+                            <td class="title2">Low</td>
+                           
+                        </tr>
+                    </table>
+                </div><!--home info-->
+            </div><!--home card-->
+
+        </div><!--home grid-->
+    </section>
+
+    <section class="control" id="Control">
+        <div class="control-text">
+            <h2>Welcome to City Control</h2>
+            <p>Manage and monitor city systems efficiently — all in one place.</p>
+            </div><!--control text-->
+
+            <table>
+                <div class="control1">
+                <h3>Control Panel</h3>
+                <p>Here you can manage lights, CCTV, and water systems.</p>
+                </div>
+                <tr>
+                    <th>System</th>
+                    <th>Status</th>
+                    <th>LAst Update</th>
+                </tr>
+                <tr>
+                    <td>Street Light</td>
+                    <td class="title">ON</td>
+                    <td>10:30PM</td>
+                </tr>
+                 <tr>
+                    <td>CCTV</td>
+                    <td class="title1">OFFLINE</td>
+                    <td>11:15PM</td>
+                </tr>
+                 <tr>
+                    <td>Water Supply</td>
+                    <td class="title2">LOW PRESSURE</td>
+                    <td>9:00PM</td>
+                </tr>
+            </table>
+    </section>
+
+    <section class="report" id="Reports">
+        <div class="report-content">
+            <h2>Reports Section</h2>
+            <p>View daily and monthly reports of all city operations.</p>
+        </div><!--report-content-->
+        <table>
+            <tr>
+                <th>Report Type</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Light Maintenance</td>
+                <td>03-Nov-2025</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>CCTV Review</td>
+                <td>02-Nov-2025</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>Water System Audit</td>
+                <td>01-Nov-2025</td>
+                <td>Completed</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="setting" id="Setting">
+        <div class="setting-form">
+            <h2>Settings</h2>
+            <p>Change system configurations and preferences here.</p>
+            <form action="">
+                <div class="form-group">
+                <label for="#">Change Username</label>
+                <input type="email" name="email1" id="email1" placeholder="Enter new Username">
+                </div><!--form group-->
+                <div class="form-group">
+                <label for="#">Change Password</label>
+                <input type="password" name="pass" id="pass" placeholder="Enter new Password">
+                </div><!--form group-->
+                <button type="submit" class="btn">Save</button>
+            </form>
+        </div><!--setting form-->
+    </section>
+
+    <footer>
+        <p>© 2025 City Control Project | Designed by Faisal</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

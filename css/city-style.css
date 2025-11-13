@@ -1,0 +1,332 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background: url('../image/dubai.jpg') no-repeat center center/cover fixed;
+    z-index:-5;opacity: 10;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: rgb(0, 0, 0, 0.2)0px 4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 50px;
+}
+.logo h2{
+    font-size: 2rem;
+    color: #00e5ff;;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+.navigation{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    font-weight: 500;
+    display: block;
+    transition: all 0.3s;
+}
+li a:hover{
+    color: #00e5ff;;
+    transform: translateY(-3px);
+}
+.home{
+    padding: 100px 20px 60px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.home-text{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.home-text h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00e5ff;;
+    margin-bottom: 10px;
+
+}
+.home-text p{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.home1{
+    padding: 3rem 1rem;
+}
+.home1-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 10px;
+}
+.home1-card{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    font-weight: 700;
+    border-radius: 12px;
+    box-shadow: rgb(0, 0 0, 0.2)0px 4px 8px; 
+    transition: transform 0.3s ease;
+}
+.home1-card:hover{
+    transform: translateY(-10px);
+}
+.home1-info{
+    flex: 1;
+    padding: 20px;
+}
+.home1-info h2{
+    font-size: 1.4rem;
+    color: #00e5ff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+   margin-top: 10px;
+}
+th{
+    background-color: rgba(0, 229, 255, 0.2);
+    border: 1px solid#00e5ff;
+    padding: 8px;
+    text-align: center; 
+}
+td{
+    border: 1px solid #00e5ff;
+    padding: 10px;
+    text-align: center;
+}
+.title{
+    color: limegreen;
+}
+.title1{
+    color: red
+}
+.title2{
+    color: yellow
+}
+.control{
+    padding: 3rem 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-bottom: 10%
+}
+.control-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.control-text h2{
+    color: #00e5ff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.control-text p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+table{
+    padding: 4rem 1rem;
+    font-weight: 700;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 700px;
+}
+.control1{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.control1 h3{
+    color: #00e5ff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.control1 p{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.report{
+ padding: 2rem 1rem;
+  background: rgba(0, 0, 0, 0.5);
+ color: white;
+ margin-bottom: 10px;
+}
+.report-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.report-content h2{
+    color: #00e5ff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.report-content p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.setting{
+    padding: 2rem 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-bottom: 10px;
+}
+.setting-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.setting-form h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #00e5ff;
+}
+.setting-form p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.setting-form form{
+    width:500px;
+    padding: 25px;
+    /* background-color: white; */
+    /* border-radius: 10px; */
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px; */
+}
+.form-group{
+    margin-bottom: 15px;
+    text-align: left;
+}
+.form-group label{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    
+}
+.form-group input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+button{
+    position: relative;
+    margin-left: 150px;
+}
+.btn{
+    background-color: #00e5ff;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    border:none;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+    width: 150px;
+}
+.btn:hover{
+    background-color: #618e93;
+    transform: translateY(-3px);
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    nav {
+        width: 100%;
+        display: none;
+    }
+    nav.active {
+        display: block;
+        width: 100%;
+    }
+    .navigation {
+        flex-direction: column;
+        width: 100%;
+        background: #374151;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .navigation li a {
+        padding: 12px;
+        display: block;
+    }
+  .home h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h2 {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .home1-grid {
+    grid-template-columns: 1fr;
+  }
+}  
